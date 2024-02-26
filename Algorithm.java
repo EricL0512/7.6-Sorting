@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 
 public class Algorithm {
@@ -30,6 +31,9 @@ public class Algorithm {
         arr[j] = temp;
     }
     public ArrayList<String> selectionSort(ArrayList<String> strings) {
-
+        String[] strings1 = new String[strings.size()];
+        strings1 = strings.toArray(strings1);
+        ArrayList<String> result = new ArrayList<>(Arrays.asList(selectionSort(strings1)));
+        return result;
     }
 }

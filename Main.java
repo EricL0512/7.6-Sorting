@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Main {
     public static void printArray(String[] s) {
         for (String str: s) {
@@ -12,5 +15,9 @@ public class Main {
         printArray(a.selectionSort(new String[]{"Zebra", "alpha"}));
         printArray(a.selectionSort(new String[]{"A", "B", "C", "D", "E", "F"}));
         printArray(a.selectionSort(new String[]{"F", "E", "D", "C", "B", "A"}));
+        System.out.println("ArrayList Selection Sort");
+        System.out.println(a.selectionSort(new ArrayList<>(Arrays.asList("Zebra", "alpha"))));
+        System.out.println(a.selectionSort(new ArrayList<>(Arrays.asList("A", "B", "C", "D", "E", "F"))));
+        System.out.println(a.selectionSort(new ArrayList<>(Arrays.asList("F", "E", "D", "C", "B", "A"))));
     }
 }
