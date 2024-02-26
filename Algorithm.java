@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+
+
 public class Algorithm {
     public String[] selectionSort(String[] strings) {
         int index;
@@ -25,5 +28,8 @@ public class Algorithm {
         String temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
+    }
+    public ArrayList<String> selectionSort(ArrayList<String> strings) {
+
     }
 }
