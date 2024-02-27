@@ -19,5 +19,14 @@ public class Main {
         System.out.println(a.selectionSort(new ArrayList<>(Arrays.asList("Zebra", "alpha"))));
         System.out.println(a.selectionSort(new ArrayList<>(Arrays.asList("A", "B", "C", "D", "E", "F"))));
         System.out.println(a.selectionSort(new ArrayList<>(Arrays.asList("F", "E", "D", "C", "B", "A"))));
+        System.out.println("Array Insertion Sort");
+        printArray(a.insertionSort(new String[]{"Zebra", "alpha"}));
+        printArray(a.insertionSort(new String[]{"A", "B", "C", "D", "E", "F"}));
+        printArray(a.insertionSort(new String[]{"F", "E", "D", "C", "B", "A"}));
+        System.out.println("ArrayList Insertion Sort");
+        System.out.println(a.insertionSort(new ArrayList<>(Arrays.asList("Zebra", "alpha"))));
+        System.out.println(a.insertionSort(new ArrayList<>(Arrays.asList("A", "B", "C", "D", "E", "F"))));
+        System.out.println(a.insertionSort(new ArrayList<>(Arrays.asList("F", "E", "D", "C", "B", "A"))));
+        System.out.println();
     }
 }
